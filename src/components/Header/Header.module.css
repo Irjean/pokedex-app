@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    border-right: 2px solid black;
+}
+
+header h1{
+    font-size: 2rem;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+nav{
+    margin: 20px 0 0 20px
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+
+nav a, nav a:link, nav a:visited{
+    color: white;
+}
