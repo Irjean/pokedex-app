@@ -1,0 +1,67 @@
+.pokemonPageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.dispFlex{
+    display: flex;
+}
+
+.pokemonTypesContainer{
+    gap: 10px;
+}
+
+.pokemonStats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.listOuterContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.listContainer{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listContainer ul{
+    list-style: none;
+}
+
+.additionalStatsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.additionalStatsListContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.additionalStatsList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.additionalStatsList ul{
+    list-style: none;
+}
