@@ -4,7 +4,65 @@
     align-items: center;
     width: 100%;
     gap: 20px;
+    padding-top: 50px;
 }
+
+.pokePopupContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+
+.close{
+    display: none;
+}
+
+.pokePopup{
+    border: 5px solid rgb(95, 94, 94);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 20px;
+    color: black;
+}
+
+.buttonContainer{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.yesButton{
+    background-color: rgb(47, 154, 75);
+    color: white;
+}
+
+.noButton{
+    background-color: rgb(214, 40, 40);
+    color: white;
+}
+
+.imgContainer{
+    position: relative;
+}
+
+.pokeball{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    z-index: 2;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+}
+
 
 .dispFlex{
     display: flex;
@@ -21,11 +79,15 @@
     width: 30%;
 }
 
-.listOuterContainer{
+.pokeDescriptionContainer{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     align-items: center;
+}
+
+.pokeDescription{
+    text-align: center;
 }
 
 .listContainer{
@@ -43,7 +105,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 60%;
 }
 
 .additionalStatsListContainer{
@@ -55,13 +117,37 @@
 }
 
 .additionalStatsList{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 
-.additionalStatsList ul{
+.additionalStatsListContainer ul{
     list-style: none;
+}
+
+@media screen and (max-width: 540px) {
+    .pokemonStats{
+        width: 60%;
+    }
+
+    .additionalStatsListContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .additionalStatsContainer{
+        width: 90%;
+    }
+
+    .additionalStatsList{
+        width: 100%;
+    }
+
+    .additionalStatsList ul{
+        width: 100%;
+    }
 }

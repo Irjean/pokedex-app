@@ -1,11 +1,14 @@
 .homeContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     min-height: 100vh;
 }
 
 .outletContainer{
-    width: 90vw;
-    padding-bottom: 100px;
+    width: 100vw;
+    min-height: 90vh;
+    padding: 90px 0 100px 0;
 }
