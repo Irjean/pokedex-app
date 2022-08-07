@@ -9,7 +9,6 @@ function PokemonList() {
   const list = usePokemons();
   
   useEffect(() => {
-    console.log("refresh")
     list.length == 0 ? setTrueList(list) : setTrueList(list.filter(i => i.name.includes(search)))
   }, [search, list]);
 
