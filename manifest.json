@@ -1,0 +1,17 @@
+{
+    "name" : "Pokeweb",
+    "start_url" : "./",
+    "scope" : ".",
+    "display" : "standalone",
+    "description" : "Un pokedex en ligne",
+    "dir" : "ltr",
+    "lang" : "en-EN",
+    "theme_color" : "#fff",
+    "background_color" : "#242424",
+    "orientation" : "any",
+    "icons" : [{
+        "src" : "./src/assets/pokeball.png",
+        "type" : "image/png",
+        "sizes" : "512x512"
+    }]
+}
